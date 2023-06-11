@@ -1,0 +1,385 @@
+/* header */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e6e6e6;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+#header {
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: fixed;
+    height: 58px;
+    align-items: center;
+    background-color: #323232;
+    z-index: 1;
+    transition: transform 0.3s ease-out;
+}
+  
+.name {
+    position: absolute;
+    left: 5%; 
+    font-family: 'Thasadith';
+    font-style: normal;
+    font-size: 32px;
+    height: 60px;
+    display: flex;
+    align-items: center; 
+}
+  
+.name p {
+    color: #e6e6e6;
+    font-style: normal;
+   
+}
+  
+nav {
+    width: 300px;
+    margin-right: 5%;
+    justify-content: space-between;
+    display: flex;
+}
+  
+nav p {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: #e6e6e6;
+    position: relative;
+    transition: border-bottom 0.3s ease;
+    font-size: 18px;
+}
+  
+nav p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #e6e6e6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  
+nav p:hover::after {
+    transform: scaleX(1);
+}
+  
+.adv-menu, .account-menu{
+    position: relative;
+} 
+  
+.adv-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #323232;
+    padding: 0 10px;
+    min-width: 90px;
+}
+  
+.adv-menu:hover .dropdown-menu {
+    display: block;
+    text-align: center;
+}
+  
+.adv-menu a {
+    display: block;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+.dropdown-menu a{
+    padding: 5px 0;
+    font-family: 'Tenor Sans';
+    font-size: 15px;
+    font-weight: 600px;
+}
+  
+.adv-menu a:hover {
+    color: #1f7fc0;
+}
+
+
+.account-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -22px;
+  background-color: #323232;
+  padding: 0 10px;
+  min-width: fit-content;
+}
+
+.account-menu:hover .dropdown-menu {
+  display: block;
+  text-align: center;
+}
+
+.account-menu a {
+  display: block;
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+.account-menu a:hover {
+  color: #1f7fc0;
+}
+
+  
+
+  
+/* footer */
+footer {
+    background-color: #323232;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    bottom: 0;
+}
+  
+.footer-contact {
+    flex-grow: 1;
+}
+  
+.footer-contact h2 {
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 24px;
+    color: #e6e6e6;
+    margin-bottom: 1rem;
+}
+  
+.footer-contact p {
+    margin: 0;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    color: #e6e6e6;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+  
+.footer-logo {
+    text-align: center;
+    flex-grow: 1;
+}
+  
+.footer-logo h1 {
+    color: #e6e6e6;
+    margin: 12px;
+    font-family: 'Thasadith';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+}
+  
+.footer-logo p {
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #e6e6e6;
+    margin: 0;
+}
+  
+.footer-conditions {
+    padding: 80px 0 0 0;
+    flex-grow: 1;
+    text-align: right;
+}
+  
+.footer-conditions p {
+    margin: 0;
+    font-family: 'Tenor Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #e6e6e6;
+    font-style: normal;
+    line-height: 20px;
+}
+  
+.footer-conditions p:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+  
+
+
+/* log in page*/
+
+.log-in-body {
+    margin: 5rem 30%;
+    height: 500px;
+    width: 600px;
+    background-color: #e6e6e6;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+.choise {
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.choise-left {
+    margin-left: 35px;
+ }
+
+.choise a {
+    color: #393939;
+    font-family: 'Tenor Sans';
+    font-size: 36px;
+}
+
+.log-in-box {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    font-family: 'Tenor Sans';
+    letter-spacing: 0.1rem;
+    gap: 2rem;
+}
+
+.log-in-input {
+    position: relative;
+    padding: 0.5rem 0;
+    width: 400px;
+}
+
+.transparent-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #393939;
+    outline: none;
+    background: transparent;
+    color: #393939;
+    padding: 0px 0px;
+    font-size: 1.5rem;
+}
+
+.transparent-label {
+    position: absolute;
+    left: 0;
+    padding: 0px 0px;
+    color: #393939c6;
+    font-size: 1.2rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.transparent-input:valid ~ label,
+.transparent-input:focus ~ label {
+    transform: translateY(-1.2rem);
+    font-size: 0.70rem;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.log-in-button {
+    position: absolute;
+    width: 250px;
+    height: 68px;
+    margin-top: 25rem;
+    background: #323232;
+    border-radius: 90px;
+    color: #e6e6e6;
+    font-family: 'Tenor Sans';
+    font-size: 20px;
+    border: 0;
+    box-shadow: none;
+    transition: background 0.3s ease;
+}
+
+.log-in-button:hover {
+    cursor: pointer;
+    background: #4b4b4b;
+}
+
+.log-in-button:active {
+    background: #393939c8;
+}
+
+/* registration page*/
+
+.choise a.active {
+    border-bottom: 3px solid #323232 ;
+}
+
+.register-body {
+    margin: 5rem 30%;
+    height: 560px;
+    width: 600px;
+    background-color: #e6e6e6;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.register-box {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    font-family: 'Tenor Sans';
+    letter-spacing: 0.1rem;
+    gap: 2rem;
+}
+
+.register-input {
+    position: relative;
+    padding: 0.5rem 0;
+    width: 400px;
+}
+
+.register-button {
+    position: absolute;
+    width: 250px;
+    height: 68px;
+    margin-top: 28rem;
+    background: #323232;
+    border-radius: 90px;
+    color: #e6e6e6;
+    font-family: 'Tenor Sans';
+    font-size: 20px;
+    border: 0;
+    box-shadow: none;
+    transition: background 0.3s ease;
+}
+
+.register-button:hover {
+    cursor: pointer;
+    background: #4b4b4b;
+}
+
+.register-button:active {
+    background: #393939c8;
+}

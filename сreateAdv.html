@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="createAdv.css" />
+    <title>оголошення</title>
+  </head>
+  <body style="background-color: #323232">
+    <header id="header">
+      <nav>
+        <a href=""><p>контакти</p></a>
+        <div class="adv-menu">
+          <a href=""><p>оголошення</p></a>
+          <div class="dropdown-menu">
+            <a href="advertisement.html">переглянути</a>
+            <a href="сreateAdv.html">створити</a>
+          </div>
+        </div>
+        <div class="account-menu">
+          <a href=""><p>акаунт</p></a>
+          <div class="dropdown-menu">
+            <a href="login.html">вхід</a>
+            <a href="registration.html">реєстрація</a>
+          </div>
+        </div>
+      </nav>
+      <div class="name">
+        <a href="main.html"><p>marketzone</p></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>створити оголошення</h1>
+
+      <form class="form-body">
+        <div class="contact-info">
+          <div class="form-group">
+            <label for="title">заголовок:</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="price">ціна:</label>
+            <input
+              type="text"
+              id="price"
+              name="price"
+              placeholder="..."
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">опис:</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="type">
+          <div class="form-group">
+            <label for="category">категорія:</label>
+            <select id="category" name="category" required>
+              <option value="">категорія</option>
+              <option value="одяг і взуття">одяг і взуття</option>
+              <option value="краса та здоров'я">краса та здоров'я</option>
+              <option value="спортивні товари">спортивні товари</option>
+              <option value="хобі та розваги">хобі та розваги</option>
+              <option value="аксесуари">аксесуари</option>
+              <option value="техніка">техніка</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subcategory">тип:</label>
+            <select id="subcategory" name="subcategory" required>
+              <option value="">тип</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="condition">стан:</label>
+            <select id="condition" name="condition" required>
+              <option value="">стан</option>
+              <option value="новий">новий</option>
+              <option value="вживаний">вживаний</option>
+              <option value="пошкоджений">пошкоджений</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="photo">фотографії (максимум 6) +</label>
+        <input type="file" id="photo" name="photo" multiple accept="image/*" />
+        <div class="photo-preview-container" id="photo-preview-container"></div>
+
+        <div class="contact-body">
+          <div class="contact-info">
+            <div class="form-group">
+              <label for="contacts">номер телефону:</label>
+              <input
+                type="text"
+                id="contacts"
+                name="contacts"
+                placeholder="..."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">e-mail адреса:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="..."
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="form-group">
+              <label for="region">регіон:</label>
+              <input
+                type="text"
+                id="region"
+                name="region"
+                placeholder="..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="postal-code">поштовий індекс:</label>
+              <input
+                type="text"
+                id="postal-code"
+                name="postal-code"
+                placeholder="..."
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">опублікувати</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-contact">
+        <h2>зв'язатися з нами</h2>
+        <p>м.Львів вул.Карпинця 1</p>
+        <p>marketzone@gmail.com</p>
+        <p>+380678000100</p>
+      </div>
+      <div class="footer-logo">
+        <h1>M</h1>
+        <p>(c)MARKETZONE 2023.</p>
+      </div>
+      <div class="footer-conditions">
+        <p>Умови використання</p>
+        <p>Політика конфіденційності</p>
+      </div>
+    </footer>
+    <script src="createAdv.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

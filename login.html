@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>вхід</title>
+  </head>
+  <body style="background-color: #393939">
+    <header id="header">
+      <nav>
+        <a href=""><p>контакти</p></a>
+        <div class="adv-menu">
+          <a href=""><p>оголошення</p></a>
+          <div class="dropdown-menu">
+            <a href="advertisement.html">переглянути</a>
+            <a href="сreateAdv.html">створити</a>
+          </div>
+        </div>
+        <div class="account-menu">
+          <a href=""><p>акаунт</p></a>
+          <div class="dropdown-menu">
+            <a href="login.html">вхід</a>
+            <a href="registration.html">реєстрація</a>
+          </div>
+        </div>
+      </nav>
+      <div class="name">
+        <a href="main.html"><p>marketzone</p></a>
+      </div>
+    </header>
+
+    <main class="log-in-body">
+      <div class="choise">
+        <a class="choise-left active" href="login.html">вхід</a>
+        <a class="choise-right" href="registration.html">реєстрація</a>
+      </div>
+      <div class="log-in-box">
+        <div class="log-in-input">
+          <input type="text" class="transparent-input" required />
+          <label class="transparent-label">номер чи e-mail адреса</label>
+        </div>
+        <div class="log-in-input">
+          <input
+            type="password"
+            class="transparent-input"
+            id="password-input"
+            required
+          />
+          <label class="transparent-label">пароль</label>
+          <img
+            src="images/vector-eye.png"
+            class="password-toggle-icon"
+            onclick="togglePasswordVisibility()"
+          />
+        </div>
+        <button class="log-in-button">увійти</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-contact">
+        <h2>зв'язатися з нами</h2>
+        <p>м.Львів вул.Карпинця 1</p>
+        <p>marketzone@gmail.com</p>
+        <p>+380678000100</p>
+      </div>
+      <div class="footer-logo">
+        <h1>M</h1>
+        <p>MARKETZONE 2023.</p>
+      </div>
+      <div class="footer-conditions">
+        <p>Умови використання</p>
+        <p>Політика конфіденційності</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
